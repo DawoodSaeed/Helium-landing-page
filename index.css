@@ -44,6 +44,7 @@ body {
 /* For the Header slide #################################### */
 .header-slides {
   height: 70vh;
+  display: flex;
 }
 
 .header-slides > .slide {
@@ -51,10 +52,15 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   color: #fff;
   text-align: center;
+  background-size: cover;
+  flex: 1;
+  min-width: 100%;
+  transform: translateX(-100%);
+  cursor: pointer;
 }
 
 .slide h1 {
@@ -72,7 +78,10 @@ body {
 
 .header-slides > .slide:nth-child(1) {
   background: url(images/slider/bg-1.jpg);
-  background-size: cover;
+}
+
+.header-slides > .slide:nth-child(2) {
+  background: url(images/slider/bg-2.jpg);
 }
 
 /* Utilities */
