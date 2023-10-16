@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+}
+
+:root {
+  --primary-color: #d14f63;
+}
+
+/* For the header navigation ############################ */
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  position: absolute;
+  width: 100%;
+}
+
+.header-nav img {
+  max-width: 150px; /*Responsive Images;*/
+}
+
+.header-nav .logo {
+  border: 1px solid var(--primary-color);
+  padding: 0.5em 1.4em;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.header-nav i {
+  color: #fff;
+}
+
+/* For the Header slide #################################### */
+.header-slides {
+  height: 70vh;
+}
+
+.header-slides > .slide {
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.slide h1 {
+  font-size: 4vmax;
+}
+
+.slide p {
+  padding: 20px 0px;
+}
+
+.slide i {
+  font-size: 1.5em;
+  color: #d6d4d4;
+}
+
+.header-slides > .slide:nth-child(1) {
+  background: url(images/slider/bg-1.jpg);
+  background-size: cover;
+}
+
+/* Utilities */
+.primary-btn {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  padding: 0.8em;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+  border-radius: 2px;
+}
