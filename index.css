@@ -687,3 +687,68 @@ h6 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* ##################### FOOTER ####################### */
+.footer {
+  /* display: grid; */
+  padding: 50px 10vw;
+  background-color: #282828;
+  color: #fff;
+}
+
+.footer h3 {
+  text-transform: uppercase;
+  margin: 10px 0px;
+  /* color: #696969; */
+}
+
+.footer__grid {
+  display: grid;
+  gap: 50px;
+}
+
+.footer__grid > div:first-of-type {
+  grid-column: span 2;
+}
+
+.footer__gallery {
+  grid-column: span 2;
+}
+.small_img_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.small_img_grid img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer__grid > div:nth-child(2) ul li {
+  list-style: none;
+  padding: 5px 0px;
+  text-transform: uppercase;
+}
+
+.form-control {
+  padding: 10px;
+  font: inherit;
+  background-color: transparent;
+  border: 1px solid #fff;
+  /* border-radius: 4px; */
+  margin: 4px 0px;
+  background: #1d1d1d;
+}
+
+.footerBtn {
+  padding: 5px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+/* For the tablets; */
+@media (min-width: 768px) {
+  .footer__grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
